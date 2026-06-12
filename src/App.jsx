@@ -16,7 +16,7 @@ const QUESTIONS = [
       'Studium im Sportbereich',
       'Physiotherapeut',
       'Trainerlizenz (A-, B- oder C-Lizenz)',
-      'Pilates- oder Yogalehrer',
+      'Pilatestrainer',
       'Noch keine Ausbildung im Sportbereich'
     ]
   },
@@ -68,7 +68,7 @@ const TAG_MAP = {
     'Studium im Sportbereich': 'QUALIFIKATION_STUDIUM',
     'Physiotherapeut': 'QUALIFIKATION_PHYSIO',
     'Trainerlizenz (A-, B- oder C-Lizenz)': 'QUALIFIKATION_TRAINERLIZENZ',
-    'Pilates- oder Yogalehrer': 'QUALIFIKATION_YOGA_PILATES',
+    'Pilatestrainer': 'QUALIFIKATION_YOGA_PILATES',
     'Noch keine Ausbildung im Sportbereich': 'QUALIFIKATION_QUEREINSTEIGER'
   },
   q2: {
@@ -257,7 +257,7 @@ export default function App() {
     const q1Answer = answers.q1;
     if (['Studium im Sportbereich', 'Physiotherapeut'].includes(q1Answer)) {
       return 'ERGEBNIS_A';
-    } else if (['Trainerlizenz (A-, B- oder C-Lizenz)', 'Pilates- oder Yogalehrer'].includes(q1Answer)) {
+    } else if (['Trainerlizenz (A-, B- oder C-Lizenz)', 'Pilatestrainer'].includes(q1Answer)) {
       return 'ERGEBNIS_B';
     } else {
       return 'ERGEBNIS_C';
